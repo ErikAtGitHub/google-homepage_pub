@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Ville Peltonen
+    Date created: 12/26/2019
+    Most recent revision: 12/28/2019
+
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Erik P" />
+
+        <title>Mock Google Homepage</title>
+        
+        <style>
+            #logo {
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                top: 50px;
+                z-index: -1;
+            }
+            form {
+                margin: 0 auto;
+                width: 400px;            
+            }
+            nav, footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }          
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
+                background-color: rgb(238, 231, 231);
+            }
+            .inline {
+                display: inline;
+            }
+            #search-bar {
+                width: 400px;
+                border-radius: 10px;
+            }
+
+            #text-align {
+                text-align: center;
+            }
+            #sign-in {
+                background-color: rgb(61, 128, 204);
+                color: white;
+                border: none;
+                padding: 5px;
+            }
+            .nav-button {
+                margin: 5px;
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header></header>
+            <nav>
+                <ul>
+                    <li><a href="about" class="nav-button">About</a></li>
+                    <li><a href="store" class="nav-button">Store</a></li>
+                </ul>
+                <ul>            
+                    <li><a href="mock-gmail" class="nav-button">Gmail</a></li>
+                    <li><a href="mock-images" class="nav-button">Images</a></li>
+                    <li><a href="google-apps" class="nav-button">Apps</a></li>
+                    <li><button type="submit" id="sign-in" name="sign-in" class="nav-button">Sign In</button></li>
+                </ul>
+            </nav>
+                      
+            <img src="google-logo.jpg" 
+            alt="google logo" 
+            id="logo"
+            height="250"
+            />
+
+            <form action="nowhere" method="post">
+                <p>
+                    <label for="search-bar"></label>
+                    <input type="text" id="search-bar" name="search-bar" />
+                </p>
+                <div id="text-align">
+                    <p class="inline">
+                        <label for="search-button"></label>    
+                        <button type="submit" id="search-button" name="search-button">Google Search</button>
+                    </p>
+                    <p class="inline">
+                        <label for="lucky-button"></label>   
+                        <button type="submit" id="lucky-button" name="lucky-button">I'm Feeling Lucky</button>   
+                    </p>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="advertising" class="nav-button">Advertising</a></li>
+                <li><a href="business" class="nav-button">Business</a></li>
+                <li><a href="how-search-works" class="nav-button">How Search works</a></li>
+            </ul>
+            <ul>            
+                <li><a href="privacy" class="nav-button">Privacy</a></li>
+                <li><a href="terms" class="nav-button">Terms</a></li>
+                <li><a href="settings" class="nav-button">Settings</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
